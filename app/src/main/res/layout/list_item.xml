@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_margin">
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="8dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#2B3D4D" />
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productName"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="8dp"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="#2B3D4D" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantity"
+        android:fontFamily="sans-serif"
+        android:paddingBottom="8dp"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="#2B3D4D" />
+
+    <Button
+        android:id="@+id/soldButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/price"
+        android:focusable="false"
+        android:text="Sold"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
